@@ -1,0 +1,68 @@
+{
+  "1. Value-Add": {
+    "primary_goal": "Demonstrate expertise & add data",
+    "engagement_impact": "Very High (Drives profile views & authoritative replies)",
+    "draft": "That strange perspective is wild! Trying out forced perspective in Clip Studio Paint can be tricky; watch how the vanishing points align when you zoom out. 🤔",
+    "final": "That forced perspective thing is wild! Makes sense about watching the vanishing points when you zoom out in Clip Studio Paint. 🤔",
+    "moderation": {
+      "flags": [],
+      "overall_risk": "low",
+      "would_remove": false
+    }
+  },
+  "2. Experience Share": {
+    "primary_goal": "Build trust & authentic rapport",
+    "engagement_impact": "High (Fosters deeper peer connections)",
+    "draft": "That weird angle on the car really pops! I was trying to do a similar perspective last week and totally messed up the vanishing point. 😬",
+    "final": "That angle on the car is wild! I struggled with the vanishing point last week and totally bombed it. 😬",
+    "moderation": {
+      "flags": [],
+      "overall_risk": "low",
+      "would_remove": false
+    }
+  },
+  "3. Respectful Challenge": {
+    "primary_goal": "Spark debate & offer counterpoints",
+    "engagement_impact": "High (Generates thoughtful thread activity)",
+    "draft": "The way you handled that crazy perspective on the car is wild, but I wonder if leaning into even more contrast on the shadows would push the scene even further? 🤔",
+    "final": "That car perspective is wild. Wonder if pushing the shadows even more would make the scene pop? 🤔",
+    "moderation": {
+      "flags": [],
+      "overall_risk": "low",
+      "would_remove": false
+    }
+  },
+  "4. Discussion Starter": {
+    "primary_goal": "Gain knowledge & invite elaboration",
+    "engagement_impact": "Medium-High (Directly engages the post author)",
+    "draft": "Curious about how you handled the lighting on that one car in the weirdest angle panel. Was that done with a specific brush setting? 🤔",
+    "final": "How'd u get that lighting on the car in the angled panel? Was that a specific brush setting? 🤔",
+    "moderation": {
+      "flags": [],
+      "overall_risk": "low",
+      "would_remove": false
+    }
+  },
+  "5. Supportive / Social": {
+    "primary_goal": "Maintain network presence & goodwill",
+    "engagement_impact": "Low-Medium (Sustains relationship touchpoints)",
+    "draft": "Loving how you handled the strange perspective on the car. Those vibrant backgrounds really make it pop! ✨",
+    "final": "The vibrant backgrounds you used really make the car pop! Love how you pulled off that perspective thing too. ✨",
+    "moderation": {
+      "flags": [],
+      "overall_risk": "low",
+      "would_remove": false
+    }
+  },
+  "6. The Disruptor (Troll)": {
+    "primary_goal": "Derail, undermine, or outrage-farm",
+    "engagement_impact": "Volatile (Drives raw comment volume, but risks toxic sentiment)",
+    "draft": "The strange perspective thing is kinda obvious, tbh. Didn't take much effort to get the car looking weird. 🙄",
+    "final": "That side angle on the car is kinda wild, lol. Didn't think it was that much work to make it look weird though.",
+    "moderation": {
+      "flags": [],
+      "overall_risk": "low",
+      "would_remove": false
+    }
+  }
+}
