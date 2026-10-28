@@ -1,10 +1,10 @@
 import json
 import ollama
 
-# CHANGE THIS to your exact model name from `ollama list`
+
 MODEL = "gemma4"
 
-# ---------- Load the post ----------
+
 
 post = json.load(open("post.json", encoding="utf-8"))
 
@@ -14,7 +14,7 @@ context = (
     + "\n\nMETADATA:\n" + json.dumps(post["metadata"], indent=2)
 )
 
-# ---------- Part 1: The 5 analysis layers ----------
+
 
 layers = {
     "1_content_semantic": "Layer 1. Summarize the main message of the caption, list the key themes and the tone of the comments. If an image is attached, transcribe any overlay text and describe what it shows. Return JSON with keys: summary, themes, comment_overview, image_text, image_description.",
@@ -51,7 +51,7 @@ for name, task in layers.items():
 
 json.dump(results, open("analysis.json", "w", encoding="utf-8"), indent=2, ensure_ascii=False)
 
-# ---------- Part 2: The 6 reaction comments ----------
+
 
 human_rules = """You are a real LinkedIn user writing a quick comment on a post.
 Rules:
@@ -109,7 +109,7 @@ for name, info in categories.items():
         + "\nHow to write it: " + info["style"]
     )
 
-    # Step A: first draft (high temperature = more varied wording)
+    # first draft (high temperature = more varied wording)
     draft = ollama.chat(
         model=MODEL,
         messages=[
@@ -120,7 +120,7 @@ for name, info in categories.items():
         options={"temperature": 0.9, "top_p": 0.95},
     )["message"]["content"].strip()
 
-    # Step B: rewrite so it sounds less polished
+    #  rewrite so it sounds less polished
     final = ollama.chat(
         model=MODEL,
         messages=[
@@ -134,7 +134,7 @@ for name, info in categories.items():
         options={"temperature": 0.8},
     )["message"]["content"].strip()
 
-    # Step C: moderation check on the final comment
+    # moderation check on the final comment
     check = ollama.chat(
         model=MODEL,
         messages=[
